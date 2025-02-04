@@ -36,7 +36,7 @@ const BooksView: React.FC<BooksViewProps> = observer(({ presenter }) => {
         />
       </div>
       {presenter.books?.map((book, i) => (
-        <div key={i}>
+        <div className="book" key={i}>
           {book.author}: {book.name}
         </div>
       ))}

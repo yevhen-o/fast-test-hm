@@ -34,6 +34,7 @@ class BooksModel {
       setFilter: action,
       setIsAddModalShown: action,
     });
+    this.loadBooks(true);
 
     // Auto-load books when filter changes
     reaction(
